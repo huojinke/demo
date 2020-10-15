@@ -18,7 +18,7 @@ public class UserController {
 	
 	
 	@RequestMapping("show")
-	public String show(HttpServletRequest req,HttpServletResponse resp){
+		public String show(HttpServletRequest req,HttpServletResponse resp){
 		
 		req.setAttribute("list", service.select());
 		return "show";
